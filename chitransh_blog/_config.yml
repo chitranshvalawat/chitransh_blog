@@ -28,7 +28,6 @@ twitter_username: cjain1992
 github_username:  chitranshvalawat
 
 # Build settings
-theme: minima
 plugins:
   - jekyll-feed
 

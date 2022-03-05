@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+<div id="colorlib-about">
+    <div class="container">
+        <div class="row text-center">
+            <h2 class="bold">Blog</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-5 animate-box">
+                <div class="owl-carousel3">
+                    <div class="item">
+                        <img class="img-responsive about-img" src="{{ page.image1 }}" alt="html5 bootstrap template by colorlib.com">
+                    </div>
+                    <div class="item">
+                        <img class="img-responsive about-img" src="{{ page.image2 }}" alt="html5 bootstrap template by colorlib.com">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-md-push-1 animate-box">
+                <div class="about-desc">
+                    <div class="owl-carousel3">
+                        <div class="item">
+                            <h2><span>{{ page.title1 }}</span></h2>
+                        </div>
+                        <div class="item">
+                            <h2><span>{{ page.title2 }}</span></h2>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <div class="rotate">
+                            <h2 class="heading">{{ page.title1 }}</h2>
+                        </div>
+                        <div class="article animate-box">
+							<div class="desc">
+								<span class="meta">{{page.auther}}</span>
+                                <span class="meta">{{page.date | date: "%B %d, %Y"}}</span>
+
+								<p>{{ page.content}}</p>
+							</div>
+						</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

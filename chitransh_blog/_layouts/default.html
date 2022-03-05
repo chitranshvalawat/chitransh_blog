@@ -6,13 +6,18 @@
 	<title>{% if page.title %}
                 {{page.title}}
             {% else %}
-                Chitransh Jain!
+                {{ site.title }}
             {% endif %}
     </title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
-	<meta name="author" content="" />
+	<meta name="description" content="{% if page.title %}
+                                        {{page.description}}
+                                    {% else %}
+                                        {{ site.description }}
+                                    {% endif %}" />
+	<base href="{{ site.url }}">
+                                    <meta name="keywords" content="AI/ML, Web Development, SaSS, Browser Extension, Data Visulizer Dashboard, Data Mining" />
+	<meta name="author" content="Chitransh Jain" />
 
   <!-- Facebook and Twitter integration -->
 	<meta property="og:title" content=""/>
